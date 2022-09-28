@@ -15,3 +15,18 @@
 #2nd customer has wealth = 10 
 #3rd customer has wealth = 8
 #The 2nd customer is the richest with a wealth of 10.
+
+def find_richest(list):
+    wealth=[]
+    for i in range(len(list)):
+        print(f"i is {i}: {list[i]}")
+        total=0
+        for j in range(len(list[i])):
+            print(f"j is {j}: {list[i][j]}")
+            total = total + list[i][j]
+        wealth.append(total)
+    return wealth
+
+accounts = [[1,5],[7,3],[3,5]]
+
+print(find_richest(accounts))
