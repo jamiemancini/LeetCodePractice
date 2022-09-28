@@ -18,7 +18,7 @@ def running_sum_fct(list):
 
 nums = [1,2,3,4]
 
-
+#test
 print(running_sum_fct(nums))
 
 #time complexity is O(N) because we go over every element in our input
