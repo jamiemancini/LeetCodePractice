@@ -18,8 +18,13 @@
 
 def num_steps(num):
     steps = 0
-    if num % 2 == 0:
-        steps = num / 2
-    else: 
-        steps= (num +1) / 2
+    while num > 0:
+        if num % 2 == 0:
+            num = num / 2
+            steps = steps + 1
+        else: 
+            num = num - 1
+            steps = steps + 1
     return steps
+
+print(num_steps(123))
