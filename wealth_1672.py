@@ -19,14 +19,19 @@
 def find_richest(list):
     wealth=[]
     for i in range(len(list)):
-        print(f"i is {i}: {list[i]}")
         total=0
         for j in range(len(list[i])):
-            print(f"j is {j}: {list[i][j]}")
             total = total + list[i][j]
         wealth.append(total)
-    return wealth
+    wealthiest = 0
+    for k in range(len(list)):
+        if wealth[k] > wealthiest:
+            wealthiest = wealth[k]
+    return wealthiest
 
-accounts = [[1,5],[7,3],[3,5]]
+#Input: accounts = [[2,8,7],[7,1,3],[1,9,5]]
+#Output: 17
+
+accounts = [[2,8,7],[7,1,3],[1,9,5]]
 
 print(find_richest(accounts))
