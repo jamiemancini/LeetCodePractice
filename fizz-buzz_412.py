@@ -18,7 +18,16 @@
 def fizz_buzz(int):
     list=[]
     for i in range(1,int+1):
-        list.append(f"{i}")
-        print(i)
+        if i % 3 == 0 and i % 5 == 0:
+            list.append(f"FizzBuzz")
+        elif i % 3 == 0 and i % 5 != 0:
+            list.append(f"Fizz")
+        elif i % 3 != 0 and i % 5 == 0:
+            list.append(f"Buzz")
+        else:
+            list.append(f"{i}")
+    return list
 
-fizz_buzz(3)
+        
+
+print(fizz_buzz(5))
