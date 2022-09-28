@@ -35,3 +35,8 @@ def find_richest(list):
 accounts = [[2,8,7],[7,1,3],[1,9,5]]
 
 print(find_richest(accounts))
+
+#time complexity: 0(i*j) because it's proportional 
+#to the sive of the list of lists
+#space complexity: O(1) because we create a data structure
+#proportional in size
