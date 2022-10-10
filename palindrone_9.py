@@ -15,5 +15,5 @@ def isPalindrome(int):
     else:
         return False
 
-print(isPalindrome(24882))
+print(isPalindrome(121))
 
